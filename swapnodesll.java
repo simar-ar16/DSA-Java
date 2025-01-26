@@ -1,3 +1,8 @@
+/* The problem is to swap every consecutive two nodes in a linked list.
+If there are even number of nodes then swap every two nodes.public class 
+If there are odd number of nodes then swap every two nodes except last node.
+Take number of nodes and its value as input and display resultant Linkedlist after swap. */
+
 import java.util.*;
 class swapnodesll{
     static class Node{
