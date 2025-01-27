@@ -1,3 +1,6 @@
+/*We are given with a linked list and our task is 
+ * to simply reverse the linked list and print the reversed list */
+
 import java.util.Scanner;
 
 public class reverselist {
