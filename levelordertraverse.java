@@ -47,11 +47,12 @@ public class levelordertraverse {
                 }
                 System.out.print(temp.data+" ");
             }
+            System.out.println();
         }
     }
 
     public static void main(String[] args) {
-        int[] arr={1,2,3,-1,10,5,-1};
+        int[] arr={5,1,2,-1,8,3,-1,-1,-1,-1,-1,-1,3};
         Node root=constructTree(arr,0);
         printLevelOrder(root);
     }
