@@ -1,5 +1,5 @@
-import java.util.LinkedList;
-import java.util.Queue;
+//Construct a tree from given array and print the level order traversal of tree
+import java.util.*;
 
 public class levelordertraverse {
     static class Node{
