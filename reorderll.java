@@ -110,5 +110,6 @@ class reorderll
             temp.next=null;
         }
         print(head);
+        in.close();
     }
 }
