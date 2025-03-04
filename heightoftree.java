@@ -30,25 +30,12 @@ public class heightoftree {
     static int calHeight(Node root)
     {
         if(root == null)
-        return 0;
+        return -1;
 
-        int height=-1;
-        Queue<Node> q=new LinkedList<>();
-        q.add(root);
-        while(!q.isEmpty())
-        {
-            int count=q.size();
-            for(int i=0;i<count;i++)
-            {
-                Node temp=q.remove();
-                if(temp.left != null)
-                q.add(temp.left);
-                if(temp.right != null)
-                q.add(temp.right);
-            }
-            height++;
-        }
-        return height;
+        int leftHeight=calHeight(root.left);
+        int rightHeight=calHeight(root.right);
+
+        return Math.max(leftHeight, rightHeight)+1;
     }
 
     public static void main(String[] args) {
