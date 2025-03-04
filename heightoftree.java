@@ -1,7 +1,5 @@
 /* Write a code to find the height of the given binary tree */
 
-import java.util.*;
-
 public class heightoftree {
     static class Node{
         int data;
