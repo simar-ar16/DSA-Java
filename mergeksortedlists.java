@@ -1,3 +1,4 @@
+//given k sorted linked lists, Merge it and return a single sorted list. Leetcode 23
 import java.util.Scanner;
 
 public class mergeksortedlists {
@@ -28,7 +29,7 @@ public class mergeksortedlists {
         return head;
     }
 
-    static Node combine(Node[] arr)
+    static Node combine(Node[] arr) //helper function
     {
         if(arr.length == 1)
         return arr[0];
@@ -43,7 +44,7 @@ public class mergeksortedlists {
         return res;
     }
 
-    static Node merge(Node list1,Node list2)
+    static Node merge(Node list1,Node list2) //merge two lists continuously till all lists are merged
     {
         Node res=new Node();
         Node tail=res;
