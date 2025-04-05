@@ -15,7 +15,7 @@ public class groupanagrams {
     }
 
         static List<List<String>> groupAnagrams(String[] strs) {
-            HashMap<String,List<String>> ans=new HashMap<>();
+            HashMap<String,List<String>> ans=new HashMap<>(); //in this map key is the sorted string and value is the list of original strings
             for(String str:strs)
             {
                 char[] ch=str.toCharArray();
