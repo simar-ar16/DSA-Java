@@ -6,6 +6,8 @@ public class jumpgame {
         System.out.println(jump(arr,0,memo));
     }
 
+
+    //using dp
     static boolean jump(int[] arr,int start, Boolean[] memo)
     {
         if(start == arr.length -1)
@@ -25,4 +27,17 @@ public class jumpgame {
         memo[start]=false;
         return false;
     }
+
+    //below solution is using normal recursion
+    // boolean jump(int[] arr,int start, boolean res)
+    // {
+    //     boolean result=res;
+    //     if(start == arr.length -1)
+    //     return true;
+    //     for(int i=1;i<=arr[start];i++)
+    //     {
+    //         result=result || jump(arr,start+i,res);
+    //     }
+    //     return result;
+    // }
 }
